@@ -4,7 +4,7 @@ import program.Movie;
 
 public class ChildrensPrice extends Price{
 
-	int getPriceCode() {
+	public int getPriceCode() {
 		return Movie.CHILDRENS;
 	}
 
