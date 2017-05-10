@@ -13,18 +13,18 @@ public class TestMovie {
 
 	@BeforeClass
 	public static void init() {
-		jamesBond = new Movie("James Bond - Spectre", 17);
+		jamesBond = new Movie("James Bond - Spectre", Movie.REGULAR);
 	}
 
 	@Test
 	public void testGetPriceCode() {
-		assertEquals(17, jamesBond.getPriceCode());
+		assertEquals(Movie.REGULAR, jamesBond.getPriceCode());
 	}
 
 	@Test
 	public void testSetPriceCode() {
-		jamesBond.setPriceCode(15);
-		assertEquals(15, jamesBond.getPriceCode());
+		jamesBond.setPriceCode(Movie.CHILDRENS);
+		assertEquals(Movie.CHILDRENS, jamesBond.getPriceCode());
 	}
 
 	@Test

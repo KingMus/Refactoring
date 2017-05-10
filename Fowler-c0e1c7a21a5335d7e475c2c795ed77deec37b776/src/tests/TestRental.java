@@ -16,7 +16,7 @@ public class TestRental {
 
 	@BeforeClass
 	public static void init() {
-		jamesBond = new Movie("James Bond - Spectre", 17);
+		jamesBond = new Movie("James Bond - Spectre", Movie.REGULAR);
 		rental = new Rental(jamesBond, 5);
 	}
 

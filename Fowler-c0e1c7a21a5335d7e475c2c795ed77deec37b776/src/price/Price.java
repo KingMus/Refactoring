@@ -1,4 +1,4 @@
 package price;
-abstract class Price {
-abstract int getPriceCode();
+public abstract class Price {
+public abstract int getPriceCode();
 }
