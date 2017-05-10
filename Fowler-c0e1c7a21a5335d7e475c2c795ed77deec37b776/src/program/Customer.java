@@ -1,8 +1,9 @@
+package program;
 
 import java.util.Enumeration;
 import java.util.Vector;
 
-class Customer {
+public class Customer {
 	private String name;
 	private Vector rentals = new Vector();
 

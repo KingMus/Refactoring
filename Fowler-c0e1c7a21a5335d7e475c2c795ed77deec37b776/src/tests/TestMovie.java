@@ -1,5 +1,11 @@
-import org.junit.*;
-import static org.junit.Assert.*;
+package tests;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import program.Movie;
 
 public class TestMovie {
 

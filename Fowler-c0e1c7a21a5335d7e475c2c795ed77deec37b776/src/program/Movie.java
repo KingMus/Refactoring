@@ -1,23 +1,28 @@
+package program;
 public class Movie {
-    public static final int CHILDRENS = 2;
-    public static final int REGULAR = 0;
-    public static final int NEW_RELEASE = 1;
-    private String title;
-    private int priceCode;
-    public Movie(String newtitle, int newpriceCode) {
-        title = newtitle;
-        priceCode = newpriceCode;
-    }
-    public int getPriceCode() {
-        return priceCode;
-    }
-    public void setPriceCode(int arg) {
-        priceCode = arg;
-    }
-    public String getTitle (){
-        return title;
-    }
-    
+	public static final int CHILDRENS = 2;
+	public static final int REGULAR = 0;
+	public static final int NEW_RELEASE = 1;
+	private String title;
+	private int priceCode;
+
+	public Movie(String newtitle, int newpriceCode) {
+		title = newtitle;
+		setPriceCode(newpriceCode);
+	}
+
+	public int getPriceCode() {
+		return priceCode;
+	}
+
+	public void setPriceCode(int arg) {
+		priceCode = arg;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
 	double getCharge(int daysRented) {
 		double result = 0;
 		switch (getPriceCode()) {
@@ -37,8 +42,7 @@ public class Movie {
 		}
 		return result;
 	}
-    
-	
+
 	int getFrequentRenterPoints(int daysRented) {
 		if ((getPriceCode() == Movie.NEW_RELEASE) && daysRented > 1) {
 			return 2;
@@ -46,5 +50,5 @@ public class Movie {
 			return 1;
 		}
 	}
-    
+
 }
