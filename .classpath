@@ -2,5 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="Fowler-c0e1c7a21a5335d7e475c2c795ed77deec37b776/src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
